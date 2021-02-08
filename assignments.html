@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>java script</title>
+</head>
+<body>
+
+<script>
+    var string = "Assignment 1.";
+    document.write(string + "<br>");
+  var today = new Date();
+  document.write ("<br>" + today.getFullYear() + "/" + (today.getMonth() + 1)
+  + "/" + today.getDate() + "<br>");
+  var birthday = new Date(2003, 8-1, 9);
+  document.write (birthday.getFullYear() +  "/" + (birthday.getMonth() +1) + "/" + birthday.getDate() + "<br>");
+
+  var days = 0;
+  while(birthday<today){
+      birthday.setDate(birthday.getDate()+1);
+      days++;
+  }
+  document.write("I have lived " + days + "days. <br>");
+    var string2 = "Assignment 2.";
+    document.write("<br>" + string2 + "<br>");
+
+   document.write(calc(23, '-', 5));
+
+    function calc(a, o, b){
+        switch (o) {
+            case '+': return (a+b);
+                break;
+            case '-': return (a-b);
+                break;
+            case '*': return (a*b);
+                break;
+            case '/': return (a / b);
+                break;
+            case '%': return (a % b);
+                break;
+                default:
+        }
+    }
+
+    var string3 = "Assignment 3.";
+    document.write("<br>" + string3 );
+    var a = 4;
+    document.write("<br>");
+    for(var i = 1; i <= a; i++){
+        if(a % i == 0){
+            document.write(i + "  ");
+        }
+        else continue;
+    }
+
+
+</script>
+
+</body>
+</html>
